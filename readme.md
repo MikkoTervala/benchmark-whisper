@@ -4,6 +4,16 @@ This repository includes a test program and test results for evaluating the perf
 
 ---
 
+## Results
+
+It is not adviced to reduce beam width due to insignificant effect on speed.
+
+The default `base-int8` model in Home assistant is a good choice, but I will personally experiment more with the `base.en` and `small-int8` models.
+
+The graphs only show values less than 10 seconds. See [.\results](results) for all results.
+
+---
+
 ## Test Method
 
 Six voice recordings from a Home Assistant Voice Preview Edition were captured. 
@@ -42,13 +52,6 @@ These recordings were processed using the whisper models available in the Home A
   - Full allocation of CPU cores
   - CPU type: Host
   - 12GB of RAM
-
----
-
-## Results
-
-The default `base-int8` model in Home assistant is a good choice, but I will personally experiment more with the `base.en` and `small-int8` models.
-The graphs only show values less than 10 seconds. See [.\results](results) for all results.
 
 ---
 
